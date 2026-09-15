@@ -35,6 +35,10 @@ body {
   padding: 64px 24px 96px;
 }
 
+.wrap.narrow-top {
+  padding-top: 0;
+}
+
 header.page {
   display: flex;
   align-items: center;
@@ -51,6 +55,38 @@ header.page img {
 header.page .name {
   font-weight: 600;
   font-size: 20px;
+}
+
+/* Hero banner — echoes the app's marketing gradient (deep indigo -> warm amber) */
+.hero {
+  background:
+    radial-gradient(circle at 74% 28%, rgba(255,170,90,0.38), transparent 52%),
+    radial-gradient(circle at 14% 18%, rgba(70,110,200,0.30), transparent 46%),
+    linear-gradient(135deg, #0a0e1c 0%, #241209 65%, #3a1c12 100%);
+  color: #fff;
+  text-align: center;
+  padding: 72px 24px 88px;
+}
+
+.hero img.icon {
+  width: 128px;
+  height: 128px;
+  border-radius: 29px;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.45);
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.82);
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 h1 {
